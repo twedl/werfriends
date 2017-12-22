@@ -1,0 +1,10 @@
+Package: werfriends
+Title: A dataset of Friends episodes
+Version: 0.0.0.9000
+Authors@R: person("Jesse", "Tweedle", email = "jesse.tweedle@gmail.com", role = c("aut", "cre"))
+Description: A dataset of Friends episodes; season, episode, title, rating, number of ratings, directors and writers
+Depends: R (>= 3.4.0)
+License: MIT + file license
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1.9000
