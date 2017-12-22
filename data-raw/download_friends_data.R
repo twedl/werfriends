@@ -55,8 +55,9 @@ url <- "http://www.imdb.com/title/tt0108778/episodes?season="
 
 urls <- map_chr(1:10, function(n) {paste0(url, n)})
 friends_episodes <- urls %>% map(get_season_data) %>% bind_rows()
+friends_episodes[grepl("They're Up All Night", friends_episodes$title), ]$writers <- lst("Zachary Rosenblatt")
 
-devtools::use_data(friends_episodes)
+devtools::use_data(friends_episodes, overwrite = TRUE)
 
 
 
